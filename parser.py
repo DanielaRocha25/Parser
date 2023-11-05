@@ -253,20 +253,3 @@ parser = yacc()
 ast = parser.parse(teste, lexer=scanner)
 
 print("Resultado: O código é válido!")
-# Exemplos de teste
-'''
-x=2;
-y=3;
-WHILE x<y: x+1;
-----------
-x=2;
-y=3;
-IF x>y: x=2;
-----------
-Código com erro:
-x=$2;
-Resultado:
-LexToken(ID,'x',2,1)
-LexToken(IGUAL,'=',2,2)
-Erro léxico: Caracter inválido: '$'
-'''
